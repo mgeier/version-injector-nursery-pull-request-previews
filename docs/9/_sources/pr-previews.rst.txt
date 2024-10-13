@@ -15,6 +15,7 @@ There are a few requests and discussions, though:
 There are also this third-party project:
 
 * https://github.com/rossjrw/pr-preview-action
+
   * This does currently not support PR previews from forks,
     see https://github.com/rossjrw/pr-preview-action/pull/6.
 
