@@ -109,11 +109,28 @@
 <!--version-injector-injects-WARNING-above-->
 <section id="pull-request-previews">
 <h1>Pull Request Previews<a class="headerlink" href="#pull-request-previews" title="Link to this heading">¶</a></h1>
-<p><a class="reference external" href="https://github.com/orgs/community/discussions/7730">https://github.com/orgs/community/discussions/7730</a></p>
-<p><a class="reference external" href="https://github.com/rossjrw/pr-preview-action">https://github.com/rossjrw/pr-preview-action</a></p>
-<p><a class="reference external" href="https://github.com/marketplace/actions/sticky-pull-request-comment">https://github.com/marketplace/actions/sticky-pull-request-comment</a></p>
-<p><a class="reference external" href="https://github.com/JamesIves/github-pages-deploy-action">https://github.com/JamesIves/github-pages-deploy-action</a></p>
-<p><a class="reference external" href="https://github.com/blueedgetechno/win11React/blob/master/.github/workflows/pr-preview.yml">https://github.com/blueedgetechno/win11React/blob/master/.github/workflows/pr-preview.yml</a></p>
+<p>TODO: this section is only about GitHub,
+other providers should be investigated as well.</p>
+<p>At the time of writing,
+building previews for pull requests is not directly supported by GitHub.
+There are a few requests and discussions, though:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/orgs/community/discussions/7730">https://github.com/orgs/community/discussions/7730</a></p></li>
+<li><p><a class="reference external" href="https://github.com/actions/deploy-pages/issues/180">https://github.com/actions/deploy-pages/issues/180</a></p></li>
+<li><p><a class="reference external" href="https://github.com/actions/deploy-pages/issues/337">https://github.com/actions/deploy-pages/issues/337</a></p></li>
+</ul>
+<p>There are also this third-party project:</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/rossjrw/pr-preview-action">https://github.com/rossjrw/pr-preview-action</a>
+* This does currently not support PR previews from forks,</p>
+<blockquote>
+<div><p>see <a class="reference external" href="https://github.com/rossjrw/pr-preview-action/pull/6">https://github.com/rossjrw/pr-preview-action/pull/6</a>.</p>
+</div></blockquote>
+</li>
+</ul>
+<p>In the meantime, the GitHub workflow configuration at
+<a class="reference external" href="https://github.com/mgeier/version-injector-nursery/tree/main/.github/workflows">https://github.com/mgeier/version-injector-nursery/tree/main/.github/workflows</a>
+shows an example how PR previews can be implemented.</p>
 </section>
 
             <div class="clearer"></div>
