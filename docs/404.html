@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <title>Error 404 (Resource not found)</title>
+  <script>
+    window.onload = () => {
+      document.getElementById("requested").innerHTML = window.location.href;
+      let pathname = window.location.pathname;
+      if (!pathname.startsWith("/version-injector-nursery/")) {
+        throw new Error("This 404 page should only be used within '/version-injector-nursery/'");
+      }
+      pathname = pathname.slice(25);
+      if (false) {}
+      else if (pathname.startsWith("/official")) {}
+      else if (pathname.startsWith("/12")) {}
+      else {
+        const redirecting = '/version-injector-nursery/official' + pathname;
+        let body = document.querySelector("body");
+        body.innerHTML = "Redirecting to <code>" + redirecting + "</code>";
+        window.location.pathname = redirecting;
+      }
+    }
+  </script>
+</head>
+<h1>Error 404</h1>
+<p>The requested resource <code id="requested"></code> was not found.</p>
+<p>Maybe try the <a href="/version-injector-nursery/">main page</a>?</p>

@@ -1,3 +1,4 @@
 vanguard = ["official"]
 templates-path = "templates"
 unlisted-warning = "pr-warning.html"
+unlisted = ["12"]
