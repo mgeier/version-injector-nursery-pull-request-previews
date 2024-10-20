@@ -9,16 +9,6 @@
         throw new Error("This 404 page should only be used within '/version-injector-nursery-pull-request-previews/'");
       }
       pathname = pathname.slice(47);
-      if (false) {}
-      else if (pathname.startsWith("/official")) {}
-      else if (pathname.startsWith("/13")) {}
-      else if (pathname.startsWith("/12")) {}
-      else {
-        const redirecting = '/version-injector-nursery-pull-request-previews/official' + pathname;
-        let body = document.querySelector("body");
-        body.innerHTML = "Redirecting to <code>" + redirecting + "</code>";
-        window.location.pathname = redirecting;
-      }
     }
   </script>
 </head>
