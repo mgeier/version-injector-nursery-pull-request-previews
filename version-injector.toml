@@ -1,3 +1,2 @@
 templates-path = "templates"
-unlisted-warning = "pr-warning.html"
 unlisted = ["14","13","12"]
